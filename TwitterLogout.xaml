@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TwitterLogout" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="654,1170" sap2010:WorkflowViewState.IdRef="TwitterLogout_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TwitterLogout" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="654,1201" sap2010:WorkflowViewState.IdRef="TwitterLogout_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -65,14 +65,14 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Logout from twitter using click and delay" DisplayName="Twitter Logout Sequence" sap:VirtualizedContainerService.HintSize="476,1105" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Logout from twitter using click and delay" DisplayName="Twitter Logout Sequence" sap:VirtualizedContainerService.HintSize="476,1136" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Home / Twitter" sap:VirtualizedContainerService.HintSize="434,982" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="934e1d56-e5b9-4354-ba70-2b8bebbca66f" Version="V1">
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Go to twitter home and logging out" AttachMode="ByInstance" DisplayName="Use Browser Edge: Home / Twitter" sap:VirtualizedContainerService.HintSize="434,1013" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="934e1d56-e5b9-4354-ba70-2b8bebbca66f" Version="V1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -113,6 +113,13 @@
       <uix:NApplicationCard.TargetApp>
         <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFlSURBVDhPY/j//z9FGKsgKRjOePf9Fz+yBLJ43/G7BXX7bzTOO/8wASYGUw9X6L/yzEaYAmSsP+vwBYYpZ/4zTLvwn2Hiyf8OC47ul5+078G8C4+TQPJwhfbbHp8CKUjYcH4+zPRzzz8YMCx5/J9hzTsEXnj/P/+aF5/Pv/rihGLAvNuf68AK5tz4L9C96x3IoPw9N6egaIbi9U9+VAD18KAY4LDm2lG4opWvwAYxzLyCoRmEgUAEpg9uwPm3P8L4N7z7jE0DMjbY8/E2TA+KAUDMU3f5y3xChsy786URSQ+KAQz7nnwO19/x9jY2jSAMtV0CWQ+KAUDMf+7tz6iAo58PYdP8/udfezT1EANA0QYKdYGObe8YOvf+Z5h/G0Vz/Okv26CamZE1gzCMAZLQOP/+d0Ld1W8LYXje/R+d9778CQfJQdWgaAZhdAFQ3MojYZB/2YEYXR0cYxUkBWMVJB7/ZwAAIhPbJdfNv8sAAAAASUVORK5CYII=" InformativeScreenshot="c49b5bda4574f7bb429063e32efb022b.png" Selector="&lt;html app='msedge.exe' title='Home / Twitter'/&gt;" Url="https://twitter.com/home" />
       </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
   </Sequence>
 </Activity>
